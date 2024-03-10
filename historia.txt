@@ -1,7 +1,26 @@
 git init //Para crear el repositorio
 git add . //Para actualizar el repositorio local
 git commit //Para guardar los cambios
-git tag R1 //Para añadir un tag
+git tag -a R1 //Para añadir un tag
 git branch Mejoras //Creo la rama mejoras
 git checkout Mejoras //Cambio a esta
-
+git add . //Para actualizar el repositorio local
+git commit //Para guardar los cambios
+git checkout master //Cambiamos a la rama principal
+git merge Mejoras //Hacemos el merge
+git branch -d Mejoras //Borramos la Rama ------> SE ME OLVIDÓ HACERLA AQUÍ PERO LA HICE DESPUES DEL TAG 3 
+git add . //Para actualizar el repositorio local
+git commit //Para guardar los cambios
+git tag -a R2 //Para añadir un tag
+git add . //Para actualizar el repositorio local
+git commit //Para guardar los cambios
+git revert HEAD //Revertimos al commit anterior
+git add . //Para actualizar el repositorio local
+git commit //Para guardar los cambios
+git tag -a R3 //Para añadir un tag
+//AQUI ES DONDE BORRÉ MEJORAS (ESPERO QUE NO AFECTE AL RESULTADO FINAL)
+git remote add origin https://github.com/Mrabbit22/Git-Individual.git //Para poder hacer un push necesitamos enlazar con un repositorio
+git push origin master //Empujamos la rama existente
+git push origin --tags //Empujamos los tags
+git status //Para revisar si tuvimos cambios y ver si la rama está actualizada (no lo está porque he escrito esto en el .txt)
+git diff origin/master historia.txt //Miro las diferencias entre los archivos
