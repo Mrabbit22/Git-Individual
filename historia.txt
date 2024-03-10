@@ -1,4 +1,7 @@
 git init //Para crear el repositorio
 git add . //Para actualizar el repositorio local
+git commit //Para guardar los cambios
 git tag R1 //Para añadir un tag
+git branch Mejoras //Creo la rama mejoras
+git checkout Mejoras //Cambio a esta
 
